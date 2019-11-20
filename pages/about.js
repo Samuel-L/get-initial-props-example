@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "next/link";
 
-const Home = () => (
+const About = () => (
   <div>
-    <h1>Home</h1>
+    <h1>About</h1>
     <Link href="/">
-      <a style={{ marginRight: "2rem" }}>About</a>
+      <a style={{ marginRight: "2rem" }}>Home</a>
     </Link>
     <Link href="/contact">
       <a>Contact</a>
@@ -13,10 +13,10 @@ const Home = () => (
   </div>
 );
 
-Home.getInitialProps = () => {
+About.getInitialProps = () => {
   console.log("Running getInitialProps");
 
   return { hello: "world" };
 };
 
-export default Home;
+export default About;
